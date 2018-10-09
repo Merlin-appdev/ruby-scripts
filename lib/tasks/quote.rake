@@ -1,5 +1,7 @@
 desc "Print a random quote"
+
 task :quote do
+
   quotations = [
     {
       :quote => "Amateurs sit and wait for inspiration, the rest of us just get up and go to work.",
@@ -51,8 +53,14 @@ task :quote do
     },
   ]
 
-  # =====================================================================
-  # Your code goes below.
-  # =====================================================================
+sample_hash = quotations.sample
+
+sample_quote = sample_hash.fetch(:quote).to_s
+sample_citation = sample_hash.fetch(:citation).to_s
+
+my_output = sample_quote + "--" + sample_citation
+
+ap(my_output)
+
 
 end

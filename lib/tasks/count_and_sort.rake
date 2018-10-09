@@ -9,4 +9,24 @@ task :count_and_sort do
   # The numbers from the file are in the array `numbers`.
   # =====================================================================
 
+puts("Your numbers:")
+
+t=0
+
+numbers.each do |num|
+  puts("[" + t.to_s + "] " + num.to_s + ",")
+  t=t+1
+end
+
+puts("]")
+puts("Count: " + numbers.length.to_s)
+puts("Sorted Numbers:")
+
+t=0
+numbers.sort.each do |num|
+  puts("[" + t.to_s + "] " + num.to_s + ",")
+  t=t+1
+end
+puts("]")
+
 end

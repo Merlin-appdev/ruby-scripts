@@ -11,7 +11,34 @@ task :median do
 
   # MEDIAN
   # ======
+  
+numbers = numbers.sort
+puts("Sorted Numbers:")
+puts("[")
+t=0
+median_number = 0,0
 
+numbers.each do |num|
+  puts("[" + t.to_s + "] " + num.to_s + ",")
+  t=t+1
+
+end
+
+median_test = numbers.length/2
+
+
+if median_test.is_a? Integer
+  median_number = numbers[median_test-1]
+
+  median_number = median_number + numbers[median_test-1+1]
+
+  median_number = median_number/2
+else
+  median_number = numbers[median_test.ceil]
+end
+
+puts("]")
+puts("Median: " + median_number.to_s)
   # To find the median of a set of numbers,
   #  - sort your set
   #  - find the number of items in your sorted set

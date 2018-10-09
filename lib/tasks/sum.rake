@@ -11,7 +11,18 @@ task :sum do
 
   # SUM
   # ===
+puts("Your numbers:")
+puts("[")
+t=0
+total_sum = 0
+numbers.each do |num|
+  puts("[" + t.to_s + "] " + num.to_s + ",")
+  t=t+1
+  total_sum = total_sum + num
+end
 
+puts("]")
+puts("Sum: " + total_sum.to_s)
   # To find the sum of a set of numbers,
   #  - we start with 0
   #  - for each number in the set,

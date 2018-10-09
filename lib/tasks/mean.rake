@@ -11,7 +11,18 @@ task :mean do
 
   # MEAN
   # ====
-
+puts("Your numbers:")
+puts("[")
+t=0
+total_sum = 0
+numbers.each do |num|
+  puts("[" + t.to_s + "] " + num.to_s + ",")
+  t=t+1
+  total_sum = total_sum + num
+end
+mean_total = total_sum/numbers.length
+puts("]")
+puts("Mean: " + mean_total.to_s)
   # To find the mean (or average) of a set,
   #  - we sum up all the elements
   #  - then we divide the sum by the number of elements in the set

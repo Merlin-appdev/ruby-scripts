@@ -1,0 +1,37 @@
+
+    {
+      :their_move => Rock,
+      :our_move => Rock
+    },
+    {
+      :their_move => Rock,
+      :our_move => Paper
+    },
+    {
+      :their_move => Rock,
+      :our_move => Scissors
+    },
+    {
+      :their_move => Paper,
+      :our_move => Rock
+    },
+    {
+      :their_move => Paper,
+      :our_move => Paper
+    },
+    {
+      :their_move => Paper,
+      :our_move => Scissors
+    },
+    {
+      :their_move => Scissors,
+      :our_move => Rock
+    },
+    {
+      :their_move => Scissors,
+      :our_move => Paper
+    },
+    {
+      :their_move => Scissors,
+      :our_move => Scissors
+    },

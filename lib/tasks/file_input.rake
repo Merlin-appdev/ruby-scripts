@@ -9,5 +9,18 @@ end
 
 desc "Create a new input file and read from it"
 task :your_own_input_from_file do
+  path_to_file = Rails.root + "lib/input_files/example_rps_merlin.txt"
+  ap(path_to_file)
+  
+  rps_array = [open(path_to_file)]
+
+sample_hash = rps_array.sample
+
+computer_move = sample_hash.fetch(:their_move).to_s
+our_move = sample_hash.fetch(:our_move).to_s
+
+my_output = computer_move + "--" + our_move
+
+ap(my_output)
 
 end
